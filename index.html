@@ -23,6 +23,35 @@
   
 </head>
 <body>
+  
+  <!-- Loading Animation -->
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <div id="preloader"></div>
+    <style>
+        #preloader {
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 999;
+            width: 100%;
+            height: 100%;
+            overflow: visible;
+            background: #ffffff url('accord_loading_logo2.gif') no-repeat center center;
+        }
+    </style>
+
+    <script>
+        jQuery(document).ready(function ($) {
+            $(window).load(function () {
+                setTimeout(function () {
+                    $('#preloader').fadeOut('slow', window.onload = function () {
+                    });
+                }, 4500);
+            });
+        });
+    </script>
+    <!-- End Loading Animation -->
+  
   <section class="menu cid-r5y6DVS4iU" once="menu" id="menu2-4">
 
     
